@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace gdbcLeaderBoard.Controllers
 {
-    [Authorize(Roles = "Xpirit,Venue")]
+    //[Authorize(Roles = "Xpirit,Venue")]
     public class TeamScoreItemsController : Controller
     {
         private readonly ApplicationDbContext _context;

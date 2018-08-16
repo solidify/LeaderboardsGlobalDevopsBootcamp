@@ -19,7 +19,7 @@ using gdbcLeaderBoard.Domain.VSTSModels;
 
 namespace gdbcLeaderBoard.Controllers
 {
-    [Authorize(Roles = "Xpirit")]
+    //[Authorize(Roles = "Xpirit")]
     [Route("api/challenge")]
     public class ChallengesController : ControllerBase
     {

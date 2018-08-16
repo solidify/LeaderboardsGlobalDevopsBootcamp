@@ -15,7 +15,7 @@ using gdbcLeaderBoard.Services;
 
 namespace gdbcLeaderBoard.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

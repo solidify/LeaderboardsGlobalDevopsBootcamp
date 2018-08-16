@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace gdbcLeaderBoard.Controllers
 {
-    [Authorize(Roles = "Xpirit,Venue")]
+    //[Authorize(Roles = "Xpirit,Venue")]
     public class TeamsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -146,7 +146,7 @@ namespace gdbcLeaderBoard.Controllers
         }
 
         // GET: Teams/Delete/5
-        [Authorize("Xpirit")]
+        //[Authorize("Xpirit")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -167,7 +167,7 @@ namespace gdbcLeaderBoard.Controllers
         // POST: Teams/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize("Xpirit")]
+        //[Authorize("Xpirit")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var team = await _context.Team.SingleOrDefaultAsync(m => m.Id == id);
